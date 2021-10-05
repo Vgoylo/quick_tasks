@@ -1,22 +1,14 @@
 def power_two(number)
-  if number == 1
-    true
-  elsif number == 0
-    false
-  else 
-    check = number.to_f / 2 
+  return false if number == 0 
+  return true if number == 1 
+  
+  check = number.to_f / 2
 
-    if check == 1 
-      true
-    else
-      if check % 2 == 0
-        power_two(check)
-      else
-        false
-      end
-    end
-  end
- 
+  return true if check == 1
+
+  return power_two(check) if check % 2 == 0
+
+  false
 end
 
 p power_two(2)
@@ -28,4 +20,3 @@ p power_two(18)
 p power_two(96)
 p power_two(0)
 p power_two(1)
-  
