@@ -32,3 +32,11 @@ end
 
 
 p str_hash('Программа вычисляет среднее арифметическое элементов массива, среднее арифметическое натуральных чисел, целых чисел, набора дробных')
+
+def consonant_count(arr)
+ arr.select do |element|
+  element =~ /B|C|D|F|G|H|J|K|L|M|N|P|Q|R|S|T|V|W|X|Z|Y|b|c|d|f|g|h|j|k|l|m|n|p|r|s|t|q|v|w|x|y|z/
+ end.count
+end
+
+puts consonant_count(['hello', 'apple', 'son', 'asdfghj', 'qwertyuiop', 'aaaaaaaa'])
