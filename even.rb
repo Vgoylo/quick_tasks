@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 def even(arr)
-  #arr.select { |element| element.even? }
+  # arr.select { |element| element.even? }
   arr.select(&:even?)
 end
 

@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 # def power_two(number)
-#   return false if number == 0 
-#   return true if number == 1 
-  
+#   return false if number == 0
+#   return true if number == 1
+
 #   check = number.to_f / 2
 
 #   return true if check == 1
@@ -21,14 +23,10 @@
 # p power_two(0)
 # p power_two(1)
 
-
-
-
-
 def capital(arr)
   arr.select do |element|
-   element =~ /[A-Z]/
+    element =~ /[A-Z]/
   end
 end
 
-puts capital(['HEllo', 'good', 'QWER'])
+puts capital(%w[HEllo good QWER])

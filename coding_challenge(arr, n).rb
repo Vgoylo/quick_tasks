@@ -1,32 +1,29 @@
+# frozen_string_literal: true
+
 # def  coding_challenge(arr, n)
-#   arr.map do |element| 
-#   element % n 
+#   arr.map do |element|
+#   element % n
 #   end
 # end
 require 'date'
 def palindromic_dates(str)
- st = str.split('/').join('')
- st == st.reverse
- end
+  st = str.split('/').join('')
+  st == st.reverse
+end
 
- def valid?(str)
-  begin
-    Date.parse(str)
-  rescue StandardError => e
-    false
-  else
-     true
-  end
- end
- 
- puts 'Enter date'
- input = gets.chomp
+def valid?(str)
+  Date.parse(str)
+rescue StandardError => e
+  false
+else
+  true
+end
+
+puts 'Enter date'
+input = gets.chomp
 
 if valid?(input)
   puts palindromic_dates(input)
-else 
+else
   puts 'Invalid date format'
 end
-
-
-
