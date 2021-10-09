@@ -7,7 +7,7 @@ primer = {
   [1212, 434, 'dad',] => {"fgfgfg" => 12121, 33331 => 'a'} 
 }
 
-def delit_num(hash)
+def key_include_a(hash)
   new_hash = {}
 
   hash.each do |key,value|
@@ -20,4 +20,4 @@ def delit_num(hash)
 
 end
 
-puts delit_num(primer)
+puts key_include_a(primer)
