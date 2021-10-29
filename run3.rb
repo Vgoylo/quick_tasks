@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 def hash_with_arr(arr)
   hash = {}
 
@@ -8,7 +10,6 @@ def hash_with_arr(arr)
   hash
 end
 puts hash_with_arr([1, 2, 3, 'hello', 3, 1, 5, 6, 7, 5, 8, 9, 4, 9, 'hello'])
-
 
 def valid_phone(arr)
   arr.select do |element|
